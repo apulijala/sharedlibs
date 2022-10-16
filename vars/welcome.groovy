@@ -1,6 +1,3 @@
-// 7:21
-//   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
-
 def call() {
 
         def resultado = new StringBuilder()
@@ -15,7 +12,7 @@ def call() {
         def jsonVals = new groovy.json.JsonSlurper().parseText(resultado.toString())
         def branches = []
         for (myval in jsonVals.values) {
-            branches.add(myval.name)
+            branches.add("\'" + myval.name + "\'")
         }
         // println(branches)
     return branches
