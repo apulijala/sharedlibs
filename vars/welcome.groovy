@@ -17,6 +17,8 @@ def call() {
             branches.add(myval.name)
         }
         println(branches)
-
+    return branches
 }
+
+call()
 
