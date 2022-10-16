@@ -1,3 +1,8 @@
+import com.cloudbees.groovy.cps.NonCPS
+
+def version = '1.0'
+
+@NonCPS
 def call() {
 
         def resultado = new StringBuilder()
@@ -17,3 +22,5 @@ def call() {
         // println(branches)
     return branches
 }
+
+return this;
