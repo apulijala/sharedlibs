@@ -19,6 +19,3 @@ def call() {
         println(branches)
     return branches
 }
-
-call()
-
